@@ -1,14 +1,12 @@
 import random as rd #импортируем все библиотеки
 import math
 
-nums_1 = [] #создаем список 1
+nums_1 = rd.sample(range(1, 100000), k=100) #создаем список 1 без повторений
 quantity_1 = 0 # количество операций
 quantity_2 = 0
 
-for i in range(100):
-    nums_1.append(rd.randint(1,1000000)) # создаем массив чисел по условию
 
-nums_2 = nums_1.copy()
+nums_2 = nums_1.copy() # Создаем копию массива 1
 
 
 print('Исходное множество',nums_1)
